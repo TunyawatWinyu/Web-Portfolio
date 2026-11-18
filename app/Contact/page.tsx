@@ -58,6 +58,14 @@ export default function Contact() {
             </p>
 
             <form onSubmit={handleSubmit} className="mt-9 space-y-8">
+              <input
+                type="text"
+                name="_gotcha"
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden"
+                aria-hidden="true"
+              />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
                 <div className="flex flex-col gap-4">
                   <label htmlFor="name">Name</label>
